@@ -5,7 +5,9 @@
 .App-header {
 	background-color: #282c34;
 	color: white;
-	position: relative;
+	position: fixed;
+    width: 100%;
+	z-index: 999;
 }
 .header-img {
 	height: 24px;
