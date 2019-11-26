@@ -10,6 +10,7 @@ import collage from "./assets/collage.jpg";
 import turkey from "./assets/turkey-header.jpg";
 import Footer from "./footer";
 import emblem from "./assets/emblem.png";
+import author from "./assets/turkey-author.jpg";
 function App() {
 	const client = {
 		sandbox: credentials.client_id
@@ -38,6 +39,9 @@ function App() {
 								<div>
 									<img src={turkey} />
 								</div>
+								<div>
+									<img src={author} />
+								</div>
 							</Carousel>
 						</div>
 						<div class="column">
@@ -59,7 +63,7 @@ function App() {
 								onSuccess={(details, data) => {
 									alert(
 										"Transaction completed by " +
-											details.payer.name.given_name
+										details.payer.name.given_name
 									);
 									// OPTIONAL: Call your server to save the transaction
 									// return fetch("/paypal-transaction-complete", {
